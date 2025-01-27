@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Life Orbit</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-orange-50 h-screen flex flex-col">
+  <!-- Top Navigation Bar -->
+  <header class="flex items-center justify-between px-4 py-2 bg-white shadow">
+    <!-- Left Section -->
+    <div class="flex items-center space-x-4">
+      <img src="logo.png" alt="Life Orbit Logo" class="w-12 h-12 rounded-full">
+      <h1 class="text-lg font-bold text-yellow-600">Life Orbit</h1>
+    </div>
+    <!-- Search Bar -->
+    <div class="flex items-center bg-gray-100 px-4 py-2 rounded-full shadow-inner">
+      <input 
+        type="text" 
+        placeholder="Search..." 
+        class="bg-transparent outline-none text-gray-700 placeholder-gray-400 w-32 sm:w-64">
+      <button class="text-gray-500 ml-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657a8 8 0 111.414-1.414l4.243 4.243a1 1 0 01-1.414 1.414l-4.243-4.243z" />
+        </svg>
+      </button>
+    </div>
+    <!-- Toggle Switch -->
+    <div class="flex items-center">
+      <input type="checkbox" id="toggle" class="sr-only">
+      <label for="toggle" class="inline-flex items-center cursor-pointer">
+        <div class="w-10 h-5 bg-gray-300 rounded-full shadow-inner relative">
+          <div class="dot w-4 h-4 bg-purple-600 rounded-full shadow transform transition"></div>
+        </div>
+      </label>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-4 py-6 space-y-6">
+    <!-- Profile Section -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Profile Image -->
+      <div class="flex items-center justify-center bg-white rounded-full shadow h-32 w-32 mx-auto md:mx-0">
+        <p class="text-gray-700 font-semibold">Profile</p>
+      </div>
+      <!-- Profile Info -->
+      <div class="bg-white rounded-lg shadow p-6">
+        <p class="text-gray-700 font-semibold">Profile Info</p>
+      </div>
+    </div>
+
+    <!-- Course Progress Section -->
+    <div class="bg-white rounded-lg shadow p-6">
+      <!-- Tabs -->
+      <div class="flex justify-between border-b pb-2 mb-4">
+        <p class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1">Ongoing</p>
+        <p class="text-gray-600 font-semibold">Completed</p>
+        <p class="text-gray-600 font-semibold">Favorites</p>
+      </div>
+      <!-- Courses -->
+      <div class="space-y-4">
+        <div class="flex justify-between items-center bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-700 font-medium">Name of the course</p>
+          <div class="w-1/2 bg-gray-200 h-4 rounded-full overflow-hidden">
+            <div class="bg-blue-600 h-4 rounded-full" style="width: 50%;"></div>
+          </div>
+        </div>
+        <div class="flex justify-between items-center bg-gray-50 p-4 rounded-lg shadow">
+          <p class="text-gray-700 font-medium">Name of the course</p>
+          <div class="w-1/2 bg-gray-200 h-4 rounded-full overflow-hidden">
+            <div class="bg-blue-600 h-4 rounded-full" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Bottom Navigation Bar -->
+  <footer class="flex justify-around items-center bg-white py-3 shadow">
+    <button class="text-xl text-gray-700">
+      🏠
+    </button>
+    <button class="text-xl text-gray-700">
+      🔍
+    </button>
+    <button class="text-xl text-gray-700">
+      ❤️
+    </button>
+    <button class="text-xl text-gray-700">
+      👤
+    </button>
+  </footer>
+</body>
+</html>
