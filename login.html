@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 h-screen flex items-center justify-center">
+  <!-- Login Container -->
+  <div class="bg-white w-full max-w-md p-8 rounded-lg shadow-lg border border-blue-300">
+    <!-- Login Header -->
+    <h1 class="text-center text-2xl font-bold mb-6">Login</h1>
+
+    <!-- Toggle Switch -->
+    <div class="flex justify-end mb-6">
+      <label for="darkModeToggle" class="inline-flex items-center cursor-pointer">
+        <input id="darkModeToggle" type="checkbox" class="sr-only">
+        <div class="w-10 h-5 bg-gray-300 rounded-full relative shadow-inner">
+          <div class="dot w-4 h-4 bg-purple-600 rounded-full shadow transform transition"></div>
+        </div>
+      </label>
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <!-- Username Field -->
+      <div class="mb-4">
+        <label for="username" class="block text-gray-700 font-medium mb-2">Username <span class="text-red-500">*</span></label>
+        <div class="relative">
+          <input 
+            type="text" 
+            id="username" 
+            placeholder="Enter your username" 
+            value="jabc_123"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm">
+          <button type="button" class="absolute right-3 top-3 text-gray-500 hover:text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Password Field -->
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700 font-medium mb-2">Password <span class="text-red-500">*</span></label>
+        <div class="relative">
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="Enter your password" 
+            value="xxxxxxxx"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm">
+          <button type="button" class="absolute right-3 top-3 text-gray-500 hover:text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <p class="text-xs text-gray-500 mt-2">A-Z, a-z, 0-9, $%...</p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex items-center justify-between mt-6">
+        <!-- New User Button -->
+        <button 
+          type="button" 
+          class="px-6 py-2 text-purple-600 bg-purple-100 hover:bg-purple-200 rounded-lg font-medium shadow">
+          New User
+        </button>
+        <!-- Login Button -->
+        <button 
+          type="submit" 
+          class="px-6 py-2 text-white bg-purple-600 hover:bg-purple-700 rounded-lg font-medium shadow flex items-center space-x-2">
+          <span>Login</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7" />
+          </svg>
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
