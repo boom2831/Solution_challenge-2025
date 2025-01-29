@@ -1,123 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>New User Registration</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Login Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
 </head>
-<body class="bg-purple-50 h-screen flex flex-col items-center justify-center">
-  <!-- New User Button -->
-  <div class="absolute top-4 left-4">
-    <button class="px-4 py-2 bg-purple-100 hover:bg-purple-200 text-purple-700 rounded-lg shadow">
-      New User
-    </button>
-  </div>
+<body class="bg-gradient-to-b from-blue-100 to-blue-300 flex items-center justify-center min-h-screen">
+    <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-2xl">
+        <h1 class="text-3xl font-bold text-center text-blue-700 mb-8">Login</h1>
 
-  <!-- Login Container -->
-  <div class="bg-white w-full max-w-3xl p-8 rounded-lg shadow-lg border border-purple-300">
-    <h1 class="text-center text-2xl font-bold text-gray-800 mb-6">Login</h1>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Left Section -->
-      <div>
-        <!-- Date of Birth Field -->
+        <!-- Date of Birth Input -->
         <div class="mb-6">
-          <label for="dob" class="block text-purple-700 font-medium mb-2">DOB <span class="text-red-500">*</span></label>
-          <div class="relative">
-            <input
-              type="date"
-              id="dob"
-              class="w-full p-3 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
-            >
-            <div class="absolute right-3 top-3 text-purple-500">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 4h10M5 8h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2z" />
-              </svg>
+            <label for="dob" class="block text-base font-medium text-gray-700">Date of Birth <span class="text-red-500">*</span></label>
+            <div class="relative mt-2">
+                <input 
+                    type="text" 
+                    id="dob" 
+                    class="datepicker bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-3 shadow-sm" 
+                    placeholder="MM/DD/YYYY" 
+                />
+                <button type="button" class="absolute inset-y-0 right-0 flex items-center pr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 text-gray-400">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 4h10M5 21h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </button>
             </div>
-          </div>
-          <p class="text-xs text-gray-500 mt-2">Select your date of birth.</p>
-        </div>
-      </div>
-
-      <!-- Right Section -->
-      <div class="space-y-4">
-        <!-- Full Name Field -->
-        <div>
-          <label for="fullName" class="block text-purple-700 font-medium mb-2">Full Name <span class="text-red-500">*</span></label>
-          <div class="relative">
-            <input
-              type="text"
-              id="fullName"
-              placeholder="Enter your full name"
-              class="w-full p-3 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
-            >
-            <button type="button" class="absolute right-3 top-3 text-purple-500 hover:text-purple-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
         </div>
 
-        <!-- Username Field -->
-        <div>
-          <label for="username" class="block text-purple-700 font-medium mb-2">Username <span class="text-red-500">*</span></label>
-          <div class="relative">
-            <input
-              type="text"
-              id="username"
-              placeholder="abc_123"
-              class="w-full p-3 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
-              value="abc_123"
-            >
-            <button type="button" class="absolute right-3 top-3 text-purple-500 hover:text-purple-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+        <!-- Full Name Input -->
+        <div class="mb-6">
+            <label for="full-name" class="block text-base font-medium text-gray-700">Full Name <span class="text-red-500">*</span></label>
+            <input 
+                type="text" 
+                id="full-name" 
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-3 shadow-sm" 
+                placeholder="Enter your full name"
+            />
         </div>
 
-        <!-- Password Field -->
-        <div>
-          <label for="newPassword" class="block text-purple-700 font-medium mb-2">New Password <span class="text-red-500">*</span></label>
-          <div class="relative">
-            <input
-              type="password"
-              id="newPassword"
-              placeholder="Create new password"
-              class="w-full p-3 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
-            >
-            <button type="button" class="absolute right-3 top-3 text-purple-500 hover:text-purple-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <p class="text-xs text-gray-500 mt-2">A-Z, a-z, 0-9, $%...</p>
+        <!-- Username Input -->
+        <div class="mb-6">
+            <label for="username" class="block text-base font-medium text-gray-700">Username <span class="text-red-500">*</span></label>
+            <input 
+                type="text" 
+                id="username" 
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-3 shadow-sm" 
+                placeholder="abc_123"
+            />
         </div>
 
-        <!-- Confirm Password Field -->
-        <div>
-          <label for="confirmPassword" class="block text-purple-700 font-medium mb-2">Re-enter Password <span class="text-red-500">*</span></label>
-          <div class="relative">
-            <input
-              type="password"
-              id="confirmPassword"
-              placeholder="Re-enter the password"
-              class="w-full p-3 border border-purple-300 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none shadow-sm"
-            >
-            <button type="button" class="absolute right-3 top-3 text-purple-500 hover:text-purple-700">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-          <p class="text-xs text-gray-500 mt-2">A-Z, a-z, 0-9, $%...</p>
+        <!-- New Password Input -->
+        <div class="mb-6">
+            <label for="new-password" class="block text-base font-medium text-gray-700">New Password <span class="text-red-500">*</span></label>
+            <input 
+                type="password" 
+                id="new-password" 
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-3 shadow-sm" 
+                placeholder="Create new password"
+            />
+            <p class="mt-1 text-sm text-gray-500">A-Z, a-z, 0-9, $@...</p>
         </div>
-      </div>
+
+        <!-- Confirm Password Input -->
+        <div class="mb-6">
+            <label for="confirm-password" class="block text-base font-medium text-gray-700">Re-enter Password <span class="text-red-500">*</span></label>
+            <input 
+                type="password" 
+                id="confirm-password" 
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-3 shadow-sm" 
+                placeholder="Re-enter the password"
+            />
+            <p class="mt-1 text-sm text-gray-500">A-Z, a-z, 0-9, $@...</p>
+        </div>
+
+        <!-- Toggle -->
+        <div class="flex items-center justify-between mb-6">
+            <label class="flex items-center space-x-2">
+                <input type="checkbox" class="toggle-checkbox" />
+                <span class="text-base font-bold text-gray-700">Toggle</span>
+            </label>
+        </div>
+
+        <!-- Submit Button -->
+        <button 
+            type="submit" 
+            class="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white py-3 px-6 rounded-xl font-medium text-base shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring focus:ring-blue-300">
+            Submit
+        </button>
     </div>
-  </div>
+
+    <script>
+      // Ensure Flowbite's datepicker functionality is properly initialized
+      document.addEventListener('DOMContentLoaded', () => {
+          const dobInput = document.getElementById('dob');
+          if (dobInput) {
+              new Datepicker(dobInput, {
+                  format: 'mm/dd/yyyy',
+                  autohide: true,
+                  weekStart: 0 // Optional: Start week on Sunday
+              });
+          }
+      });
+  </script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Orbit Wireframe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-blue-100 to-blue-300 min-h-screen flex flex-col items-center">
+    <!-- Header -->
+    <div class="w-full bg-blue-500 flex items-center justify-between px-6 py-4 shadow-lg">
+        <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center shadow-md">
+                <img src="path-to-icon" alt="Icon" class="w-10 h-10">
+            </div>
+            <input 
+                type="text" 
+                placeholder="Search..." 
+                class="bg-white rounded-full px-6 py-2 text-sm shadow focus:outline-none focus:ring focus:ring-blue-300"
+            />
+        </div>
+        <div class="text-yellow-300 font-extrabold text-2xl">Life Orbit</div>
+    </div>
+
+    <!-- Categories Section -->
+    <div class="w-full max-w-5xl bg-blue-100 p-6 mt-6 rounded-2xl shadow-md">
+        <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center space-x-4">
+                <button class="bg-blue-600 text-white p-3 rounded-full shadow-md hover:bg-blue-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+                </button>
+                <span class="text-lg font-bold text-gray-800">Categories</span>
+            </div>
+            <label class="flex items-center space-x-2">
+                <input type="checkbox" class="toggle-checkbox" />
+                <span class="text-lg font-bold text-gray-800">Toggle</span>
+            </label>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+            <div class="w-full h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-xl shadow-lg"></div>
+        </div>
+    </div>
+
+    <!-- Citations Section -->
+    <div class="w-full max-w-5xl bg-blue-100 p-6 mt-6 rounded-2xl shadow-md">
+        <span class="text-lg font-bold text-gray-800">Citations</span>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full max-w-5xl flex justify-around items-center bg-blue-500 p-6 mt-6 rounded-2xl shadow-lg">
+        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-100">
+            <svg class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-100">
+            <svg class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-100">
+            <svg class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow hover:bg-gray-100">
+            <svg class="w-7 h-7 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+    </div>
+</body>
+</html>
