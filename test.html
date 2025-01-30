@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Orbit Wireframe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-purple-100 min-h-screen flex flex-col items-center">
+    <!-- Header -->
+    <div class="w-full bg-purple-200 flex items-center justify-between px-4 py-2">
+        <div class="flex items-center space-x-2">
+            <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center">
+                <img src="path-to-icon" alt="Icon" class="w-8 h-8">
+            </div>
+            <div class="text-center font-bold text-xl">Animated slogan</div>
+        </div>
+        <div class="text-yellow-600 font-bold text-lg">Life Orbit</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w-full max-w-5xl bg-white mt-4 p-4 rounded-lg shadow-md">
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center space-x-2">
+                <button class="bg-purple-500 text-white p-2 rounded-full">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+                </button>
+                <input 
+                    type="text" 
+                    placeholder="Item name" 
+                    class="bg-gray-100 rounded-full px-4 py-2 text-sm focus:outline-none focus:ring focus:ring-purple-300"
+                />
+            </div>
+            <div class="flex items-center space-x-2">
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-purple-300 rounded-full peer peer-checked:bg-purple-600"></div>
+                </label>
+                <div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center">
+                    <img src="path-to-profile-icon" alt="Profile Icon" class="w-8 h-8">
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-100 p-4 rounded-lg shadow-inner">Reading Content</div>
+            <div class="bg-gray-100 p-4 rounded-lg shadow-inner">YouTube Video</div>
+        </div>
+
+        <div class="mt-4 bg-gray-100 p-4 rounded-lg shadow-inner">
+            <div class="flex items-center justify-between">
+                <span class="text-sm font-bold">Game</span>
+                <div class="flex items-center space-x-2">
+                    <div class="flex items-center">
+                        <input type="range" class="w-40 h-2 bg-gray-300 rounded-lg appearance-none cursor-pointer">
+                    </div>
+                    <span class="text-sm font-bold">100 Points</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="w-full bg-purple-200 mt-4 py-4 flex justify-around items-center">
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+        <button class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 6h18m-7 8h7m-7 4h7" /></svg>
+        </button>
+    </div>
+</body>
+</html>
