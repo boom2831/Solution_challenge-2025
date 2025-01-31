@@ -32,11 +32,32 @@
       <button class="p-2 text-gray-600">
         <img src="translator-icon-logo-two-squares-and-arrow-translate-symbol-isolated-on-white-background-language-translation-icon-free-vector-removebg-preview.png" class="h-10 w-10">
       </button>
-      <label for="toggle" class="inline-flex items-center cursor-pointer">
+      <!--<label for="toggle" class="inline-flex items-center cursor-pointer">
         <input id="toggle" type="checkbox" class="sr-only">
         <div class="w-10 h-5 bg-gray-300 rounded-full shadow-inner"></div>
         <div class="dot mr-2 w-6 h-4 bg-purple-600 rounded-full shadow transform -translate-x-1/2 transition"></div>
       </label>
+      <label class="relative inline-block w-14 h-8">
+        <input type="checkbox" class="peer hidden">
+        <span class="absolute inset-0 bg-gray-200 rounded-full transition duration-300 peer-checked:bg-gray-900"></span>
+        <span class="absolute top-1/2 left-1 transition-all duration-300 transform -translate-y-1/2 w-6 h-6 rounded-full bg-gradient-to-r from-pink-500 to-orange-500 peer-checked:left-[calc(100%-1.75rem)] peer-checked:bg-gray-900 peer-checked:shadow-[inset_-3px_-2px_5px_-2px_#8983f7,inset_-10px_-4px_0px_0px_#a3dafb]"></span>
+    </label>--> 
+    <label class="relative inline-flex items-center cursor-pointer">
+      <input class="sr-only peer" value="" type="checkbox" />
+      <div
+        class="w-12 h-6 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden 
+        before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center 
+        before:content-['☀️'] before:absolute before:h-5 before:w-5 before:top-1/2 before:bg-white before:rounded-full 
+        before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 
+        peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full 
+        shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] 
+        after:content-['🌙'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-0.5 after:right-1 
+        after:translate-y-0 after:w-5 after:h-5 after:opacity-0 after:transition-all after:duration-700 
+        peer-checked:after:opacity-100 peer-checked:after:rotate-90 peer-checked:after:translate-y-0">
+      </div>
+    </label>
+    
+    
     </div>
   </header>
 
