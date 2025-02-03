@@ -148,6 +148,12 @@
 .mx-auto {
   margin-inline: auto;
 }
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
 .box-border {
   box-sizing: border-box;
 }
