@@ -13,18 +13,15 @@
     <div class="flex items-center space-x-4">
       <img src="Your Land.ico" alt="Life Orbit Logo" class="w-12 h-12 rounded-full">
       <h1 class="text-lg font-bold text-yellow-600">Life Orbit</h1>
-    
     </div>
     <!-- Slogan -->
     <div class="flex-1 text-center">
       <p class="text-gray-700 font-medium animate-pulse">Animated slogan</p>
     </div>
     
-    <!-- Right Section -->
-     <div>
-    <!--light dark mode togggle-->
+    <!-- Right Section - Light/Dark Mode Toggle -->
     <label class="relative inline-flex items-center cursor-pointer">
-      <input class="sr-only peer" value="" type="checkbox" />
+      <input class="sr-only peer" type="checkbox">
       <div
         class="w-12 h-6 mr-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden 
         before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center 
@@ -37,55 +34,58 @@
         peer-checked:after:opacity-100 peer-checked:after:rotate-90 peer-checked:after:translate-y-0">
       </div>
     </label>
-        <img src="966-9665493_my-profile-icon-blank-profile-image-circle.png" alt="Profile Icon" class="w-12 h-10 rounded-full">
-    </div>
+    <img src="profile.png" alt="Profile Icon" class="w-12 h-10 rounded-full">
   </header>
-  <div class="p-2 flex justify-between items-center">
-  <button><img src="translator-icon-logo-two-squares-and-arrow-translate-symbol-isolated-on-white-background-language-translation-icon-free-vector-removebg-preview.png" alt="Life Orbit Logo" class="w-12 h-12 rounded-full"></button>
-  <!-- Item Name -->
-  <div class="flex justify-center mt-4">
-    <input
-      type="text"
-      placeholder="Enter item name"
-      class=" w-128 xl:w-1000000/1 px-2 py-3 bg-gray p-4 bg-white border border-gray-300 rounded-full shadow focus:outline-none text-gray-700 placeholder-gray-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-600 transition duration-200">
-        </div>
-  <button><img src="speaker-icon-png.png" alt="Life Orbit Logo" class="class= absolute top-20 right-4 w-10 h-10 rounded-full"></button>
-  
 
-</div>
+  <!-- Translator & Item Name Section -->
+  <div class="p-2 flex justify-between items-center">
+    <button>
+      <img src="translator-icon.png" alt="Translator Icon" class="w-12 h-12 rounded-full">
+    </button>
+    
+    <div class="flex justify-items-stretch mt-4">
+      <label class="px-4 py-3 bg-white border border-gray-300 rounded-full shadow text-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-600 transition duration-200">
+        <p>Item Name</p>
+      </label>
+      <button>
+        <img src="speaker-icon-png.png" alt="Speaker Icon" class="absolute top-20 right-4 w-10 h-10 rounded-full">
+      </button>
+    </div>
+  </div>
 
   <!-- Main Content -->
-  <main class="flex-grow px-4 py-6 space-y-6 ">
-    
-
-
-          <!-- Reading Content & YouTube Video -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white rounded-lg shadow p-6 text-center">
+  <main class="flex-grow px-4 py-6 space-y-6">
+    <!-- Reading Content & YouTube Video -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg shadow p-6 text-center">
         <p class="text-gray-700 font-semibold">Reading Content</p>
-            </div>
-            <div class="bg-white rounded-lg shadow p-6 text-center">
+      </div>
+      <div class="bg-white rounded-lg shadow p-6 text-center">
         <p class="text-gray-700 font-semibold">YouTube Video</p>
-            </div>
-          </div>
+      </div>
+    </div>
 
-          <!-- Game Section -->
-          <div class="bg-white rounded-lg shadow p-6"></div>
+    <!-- Game Section -->
+    <div class="bg-white rounded-lg shadow p-6">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center space-x-2">
-          <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3m12 10h-3"></path>
-          </svg>
-          <input type="range" class="w-40">
+          <img src="turtle_icon.ico" class="w-6 h-6">
+          
+          <!-- Range Input with Dynamic Value Display -->
+          <input type="range" class="w-40" id="rangeInput" min="0.5" max="2" step="0.5" value="1" oninput="updateSpeedValue(this.value)">
+          
+          <span id="speedDisplay" class="font-bold text-gray-700">1x</span>
+          <img src="hare_icon.ico" class="w-6 h-6">
         </div>
         <div class="text-right">
-          <p class="text-gray-700 font-bold">Points</p>
+          <p class="text-gray-700 mr-2.5 font-bold">Points</p>
           <p class="text-xl text-yellow-500 font-extrabold">100 ⭐</p>
         </div>
       </div>
       <div class="text-center">
         <p class="text-gray-700 font-semibold">Game</p>
       </div>
+    </div>
   </main>
 
   <!-- Bottom Navigation Bar -->
@@ -103,5 +103,12 @@
       <img src="profile_icon.ico" class="h-8 w-8">
     </button>
   </footer>
+
+  <!-- JavaScript for Dynamic Speed Display -->
+  <script>
+    function updateSpeedValue(value) {
+        document.getElementById("speedDisplay").textContent = value + "x";
+    }
+  </script>
 </body>
 </html>
